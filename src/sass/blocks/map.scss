@@ -1,0 +1,6 @@
+.map {
+	@include container();
+	overflow: hidden;
+	width: auto;
+	height: 350px;
+}

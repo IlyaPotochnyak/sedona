@@ -1,0 +1,35 @@
+.search {
+	@include container();
+  padding: 30px 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.search__question {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.search__desrc {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media #{$tablet-width} {
+	.search {
+		@include border-box();
+		padding: 50px 155px;
+	}
+}
+@media #{$desktop-width} {
+	.search {
+		padding: 50px 370px;
+	}
+}

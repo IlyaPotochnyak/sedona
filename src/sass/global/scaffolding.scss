@@ -1,13 +1,15 @@
-@import "variables";
+@import "../variables.scss";
 
 body {
 	margin: 0;
 	padding: 0;
 	color: rgb(0, 0, 0);
-	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
 	font-style: normal;
-	background-color: $bg-main;
+	background-color: $white;
 }
 
 img {
