@@ -13,29 +13,31 @@
   <header class="page-header">
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a>Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">Фото и видео</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">HTML Academy</a>
-        </li>
-        <li class="main-nav__item  main-nav__item--active">
-          <a>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img src="img/logo-sedona-mobile.svg" alt="cite-logo">
-            </picture>
-          </a>
-        </li>
-      </ul>
+      <div class="main-nav__wrpapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" target="blank">HTML Academy</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--active">
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="cite-logo">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="page-header__bg">
     </div>
@@ -106,24 +108,26 @@
   <section class="search">
     <b class="search__question">Заинтересовались?</b>
     <p class="search__desrc">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="btn" href="#">Найти гостиницу</a>
+    <button class="btn" type="btn">Найти гостиницу</button>
   </section>
   <section class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63183.30352619212!2d-111.78001594307047!3d34.87994944031708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzEzLjgiTiAxMTHCsDQ1JzQxLjkiVw!5e0!3m2!1suk!2sua!4v1498286553842" width="1200" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
   <footer class="page-footer">
-    <h2 class="page-footer__hashtag">#VisitSedona</h2>
-    <div class="social-links">
-      <a class="social-links__item  social-links__item--tw" href="#">Мы в Твитере</a>
-      <a class="social-links__item  social-links__item--fb" href="#">Мы в Фейсбук</a>
-      <a class="social-links__item  social-links__item--yt" href="#">Мы в Ютюбе</a>
-    </div>
-    <a class="page-footer__copyright" href="#">
-      <span class="page-footer__text">Разработано</span>
-      <svg class="page-footer__logo" width="27" height="34">
-        <use xlink:href="img/symbols.svg#logo-htmlacademy"></use>
+    <div class="page-footer__wrpapper">
+      <h2 class="page-footer__hashtag">#VisitSedona</h2>
+      <div class="social-links">
+        <a class="social-links__item  social-links__item--tw" href="#">Мы в Твитере</a>
+        <a class="social-links__item  social-links__item--fb" href="#">Мы в Фейсбук</a>
+        <a class="social-links__item  social-links__item--yt" href="#">Мы в Ютюбе</a>
+      </div>
+      <a class="page-footer__copyright" href="#">
+        <span class="page-footer__text">Разработано</span>
+        <svg class="page-footer__logo" width="27" height="34">
+          <use xlink:href="img/symbols.svg#logo-htmlacademy"></use>
         <svg>
-    </a>
+      </a>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>
