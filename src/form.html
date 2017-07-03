@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sedona</title>
+  <link rel="shortcut icon" href="img/icons/sedona.ico">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header  page-header--short">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" target="blank">HTML Academy</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="cite-logo">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__bg">
+    </div>
+  </header>
+  <section class="feedback">
+    <div class="feedback__wrapper">
+      <h2 class="feedback__title">Оставьте свой отзыв</h2>
+      <p class="feedback__descr">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами ранее достопримечательностях</p>
+      <form class="feedback__form" action="#" method="post" novalidate>
+        <div class="feedback__group  feedback__group--first">
+          <div class="feedback__subtitle">
+            <h3>Представьтесь<span class="feedback__subtitle--hidden">, пожалуйста</span>:</h3>
+          </div>
+          <label for="name">Имя:
+            <input id="name" type="text" placeholder="Петр" autofocus>
+          </label>
+          <label for="surname">Фамилия:
+            <input id="surname" type="text" placeholder="Иванов">
+          </label>
+          <label for="middle-name">Отчество:
+            <input id="middle-name" type="text" placeholder="Александрович">
+          </label>
+        </div>
+        <div class="feedback__group  feedback__group--second">
+          <div class="feedback__subtitle">
+            <h3>Контактная информация:</h3>
+          </div>
+          <label for="telephone"><span><span class="feedback__group--hidden">Контактый</span> телефон:</span>
+            <input id="telephone" type="tel" placeholder="Введите телефон" pattern="[0-9]{10}" required>
+            <span class="feedback__icon  feedback__icon--tel"></span>
+            <span class="feedback__error" aria-live="polite"></span>
+          </label>
+          <label for="email">Электронная почта:
+            <input id="email" type="email" placeholder="Введите e-mail">
+            <span class="feedback__icon  feedback__icon--email"></span>
+          </label>
+        </div>
+        <div class="feedback__group  feedback__group--third">
+          <div class="feedback__subtitle">
+            <h3>Ваше общее впечатление:</h3>
+          </div>
+          <input type="radio" name="radio" id="radio-1" checked>
+          <input type="radio" name="radio" id="radio-2">
+          <input type="radio" name="radio" id="radio-3">
+          <label for="radio-1">
+            <span class="feedback__indicator"></span> Скорее положительное
+          </label>
+          <label for="radio-2">
+            <span class="feedback__indicator"></span> Скорее отрицательное
+          </label>
+          <label for="radio-3">
+            <span class="feedback__indicator"></span> Затрудняюсь ответить
+          </label>
+        </div>
+        <div class="feedback__group  feedback__group--fourth">
+          <div class="feedback__subtitle">
+            <h3>Посещенные достопримечательности:</h3>
+          </div>
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" checked>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2">
+          <input type="checkbox" name="checkbox-3" id="checkbox-3">
+          <input type="checkbox" name="checkbox-4" id="checkbox-4">
+          <label for="checkbox-1">
+            <span class="feedback__indicator"></span> Мост Дьявола
+          </label>
+          <label for="checkbox-2">
+            <span class="feedback__indicator"></span> Слайд-парк
+          </label>
+          <label for="checkbox-3">
+            <span class="feedback__indicator"></span> Гора-Колокол
+          </label>
+          <label for="checkbox-4">
+            <span class="feedback__indicator"></span> Красные скалы
+          </label>
+        </div>
+        <div class="feedback__group  feedback__group--fifth">
+          <div class="feedback__subtitle">
+            <h3>Опишите свои эмоции:</h3>
+          </div>
+          <textarea name="text" id="text" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <div class="feedback__flexbox">
+          <button class="feedback__submit btn" type="submit">Отправить отзыв</button>
+          <span class="feedback__legend">* &#8211; обязательные поля</span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrpapper">
+      <h2 class="page-footer__hashtag">#VisitSedona</h2>
+      <div class="social-links">
+        <a class="social-links__item  social-links__item--tw" href="#">Мы в Твитере</a>
+        <a class="social-links__item  social-links__item--fb" href="#">Мы в Фейсбук</a>
+        <a class="social-links__item  social-links__item--yt" href="#">Мы в Ютюбе</a>
+      </div>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/" target="blank">
+        <span class="page-footer__text">Разработано</span>
+        <svg class="page-footer__logo" width="27" height="34">
+          <use xlink:href="img/symbols.svg#logo-htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.js" async></script>
+</body>
+
+</html>

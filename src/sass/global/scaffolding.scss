@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+body {
+	margin: 0;
+	padding: 0;
+	color: rgb(0, 0, 0);
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-style: normal;
+	background-color: $white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
